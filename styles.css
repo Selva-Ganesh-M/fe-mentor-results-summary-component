@@ -27,7 +27,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 18px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -35,7 +34,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 100vh
 }
 
@@ -43,15 +41,16 @@
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-between;
-    height: 50vh;
+    flex-basis: 40vh;
     align-items: center;
     padding: 1rem;
     border-radius: 0 0 2rem 2rem;
 }
 
 .card-display > .title {
-    color: #999;
+    color: hsl(0, 0%, 90%);
     font-size: 16px;
 }
 
@@ -84,8 +83,104 @@
 
 .card-display > .review {
     font-size: 12px;
-    color: #999;
+    color: hsl(0, 0%, 70%);
     text-align: center;
     width: 60%;
     margin: 0 auto;
+}
+
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    flex: 1;
+}
+
+.summary-card > .title {
+    font-size: 16px;
+    color: hsl(224, 30%, 27%)
+}
+
+.summary-card .review-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.summary-card .review-items .review-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 5%);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.review-item .score-card{
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.review-item .score-card .out-of {
+    color: #999
+}
+
+.review-item > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+button{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    border-radius: 30px 30px;
+    padding: 1em 0;
+}
+
+.attribution.attr-desk {
+    display: none;
+}
+
+/* responsive fix */
+
+@media screen and (min-width: 756px){
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 1rem;
+    }
+
+    .main-card {
+        flex-direction: row;
+        gap: 1rem;
+        height: 50vh;
+        align-items: stretch;
+    }
+
+    .card-display {
+        flex: 1;
+        border-radius: 2rem;
+    }
+
+    .summary-card {
+        flex: 1
+    }
+
+    .attribution.attr-mobile {
+        display: none;
+    }
+
+    .attribution.attr-desk {
+        display: block;
+    }
+
 }
