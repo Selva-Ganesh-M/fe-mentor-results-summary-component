@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./styles.css">
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,64 +18,71 @@
 </head>
 <body>
 
-  <div class="display-card">
-    <h3 class="title">Your Result</h3>
-    <div class="marks">
-      <h1 class="mark">76</h1>
-      <p class="out-of">of 100</p>
+  <div class="main-card">
+    
+    <div class="card-display">
+      <h3 class="title">Your Result</h3>
+      <div class="marks">
+        <h1 class="mark">76</h1>
+        <p class="out-of">of 100</p>
+      </div>
+      <h2 class="status">Great</h2>
+      <p class="review">You scored higher than 65% of the people who have taken these tests.</p>
     </div>
-    <h2 class="status">Great</h2>
-    <p class="review">You scored higher than 65% of the people who have taken these tests.</p>
-  </div>
+  
+    <div class="summary-card">
+      <div class="title">
+        Sumary
+      </div>
+      <div class="review-items">
+        <div class="review-item">
+          <div>
+            <img src="./assets/images/icon-reaction.svg" alt="icon">
+            <span>Reaction</span>
+          </div>
+          <div class="score-card">
+            80 / <span class="out-of">100</span>
+          </div>
+        </div>
+        <div class="review-item">
+          <div>
+            <img src="./assets/images/icon-memory.svg" alt="icon">
+            <span>Memory</span>
+          </div>
+          <div class="score-card">
+            92 / <span class="out-of">100</span>
+          </div>
+        </div>
+        <div class="review-item">
+          <div>
+            <img src="./assets/images/icon-verbal.svg" alt="icon">
+            <span>Verbal</span>
+          </div>
+          <div class="score-card">
+            61 / <span class="out-of">100</span>
+          </div>
+        </div>
+        <div class="review-item">
+          <div>
+            <img src="./assets/images/icon-visual.svg" alt="icon">
+            <span>Visual</span>
+          </div>
+          <div class="score-card">
+            72 / <span class="out-of">100</span>
+          </div>
+        </div>
+        
+      </div>
+      <button>Contine</button>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.github.com/Selva-Ganesh-M/">Selva Ganesh M</a>.
+      </div>
+    </div>
 
-  <div class="summary-card">
-    <div class="title">
-      Sumary
-    </div>
-    <div class="review-items">
-      <div class="review-item">
-        <div>
-          <img src="./assets/images/icon-reaction.svg" alt="icon">
-          <span>Reaction</span>
-        </div>
-        <div class="score-card">
-          80 / <span class="out-of">100</span>
-        </div>
-      </div>
-      <div class="review-item">
-        <div>
-          <img src="./assets/images/icon-memory.svg" alt="icon">
-          <span>Memory</span>
-        </div>
-        <div class="score-card">
-          92 / <span class="out-of">100</span>
-        </div>
-      </div>
-      <div class="review-item">
-        <div>
-          <img src="./assets/images/icon-verbal.svg" alt="icon">
-          <span>Verbal</span>
-        </div>
-        <div class="score-card">
-          61 / <span class="out-of">100</span>
-        </div>
-      </div>
-      <div class="review-item">
-        <div>
-          <img src="./assets/images/icon-visual.svg" alt="icon">
-          <span>Visual</span>
-        </div>
-        <div class="score-card">
-          72 / <span class="out-of">100</span>
-        </div>
-      </div>
-      
-    </div>
-    <button>Contine</button>
   </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.github.com/Selva-Ganesh-M/">Selva Ganesh M</a>.
-  </div>
+  
+
+  
 </body>
 </html>
